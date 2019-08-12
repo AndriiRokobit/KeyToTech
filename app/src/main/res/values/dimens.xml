@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Text size-->
+    <dimen name="welcome_tittle_text_size">30sp</dimen>
+    <dimen name="enter_tittle_text_size">16sp</dimen>
+
+    <!--General margin-->
+    <dimen name="margin_material">16dp</dimen>
+    <dimen name="margin_material_small">8dp</dimen>
+
+</resources>

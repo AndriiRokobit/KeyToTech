@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.start.StartActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        style="@style/WelcomeTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_material"
+        android:text="@string/keytotech_example_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLowerBound"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_material"
+        android:layout_marginTop="@dimen/margin_material"
+        android:layout_marginEnd="@dimen/margin_material"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLowerBound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lower_bound"
+            android:inputType="numberDecimal"
+            android:paddingStart="@dimen/margin_material_small" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUpperBound"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_material"
+        android:layout_marginTop="@dimen/margin_material"
+        android:layout_marginEnd="@dimen/margin_material"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilLowerBound">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUpperBound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/upper_bound"
+            android:inputType="numberDecimal"
+            android:paddingStart="@dimen/margin_material_small" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/btnEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_material"
+        android:background="@drawable/background_enter"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/EnterTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/margin_material"
+            android:text="@string/enter" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

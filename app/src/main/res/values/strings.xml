@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KeyToTech</string>
+    <string name="keytotech_example_app">KeyToTech example app</string>
+    <string name="lower_bound">Lower bound</string>
+    <string name="upper_bound">Upper bound</string>
+    <string name="enter">Enter</string>
+    <string name="list_of_comments">List of comments</string>
+    <string name="enter_data_message">Please, enter data</string>
+</resources>
