@@ -3,7 +3,6 @@ package com.test.keytotech.mvp.start;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.test.keytotech.di.scopes.Start;
 import com.test.keytotech.model.CommentsResponse;
 import com.test.keytotech.repository.StartRepository;
 

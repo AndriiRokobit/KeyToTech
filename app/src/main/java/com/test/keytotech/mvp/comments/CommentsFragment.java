@@ -17,8 +17,6 @@ import com.test.keytotech.mvp.comments.adapter.CommentsAdapter;
 
 import java.util.ArrayList;
 
-import javax.inject.Inject;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
